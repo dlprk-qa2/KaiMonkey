@@ -22,7 +22,6 @@ module "storage" {
   private_subnet = module.network.private_subnet
   vpc_id         = module.network.vpc_id
   environment    = var.environment
-  default_tags   = var.default_tags
   db_username    = var.db_username
   db_password    = var.db_password
 }
