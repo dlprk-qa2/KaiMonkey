@@ -37,6 +37,7 @@ module "compute" {
   elb_sg = module.network.target_lb_security_group
   elb_url = module.network.elb_url
 }
+#test
 
 resource "local_file" "web-access" {
   content  = <<JSON
