@@ -38,11 +38,4 @@ module "compute" {
 }
 #test
 
-resource "local_file" "web-access" {
-  content  = <<JSON
-{
-  "fqdn": "${module.network.elb_url}"
-}
-  JSON
-  filename = "./web-access.json"
-}
+
